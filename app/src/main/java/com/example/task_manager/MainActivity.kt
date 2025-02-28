@@ -1,3 +1,4 @@
+package com.example.task_manager
 
 import com.example.taskmanagerapp.Task
 
@@ -6,22 +7,20 @@ import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.task_manager.R
 
 
 class MainActivity : AppCompatActivity() {
 
-    private val tasks = mutableListOf<Task>() // List to hold tasks
+    private val tasks = mutableListOf<Task>()
 
-    // Lifecycle Method - onCreate
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         // Log when onCreate is called
-        Log.d("MainActivity", "onCreate called")
+        Log.d("com.example.task_manager.com.example.task_manager.MainActivity", "onCreate called")
 
-        // Button to add a task
+
         val addButton = findViewById<Button>(R.id.addTaskButton)
         addButton.setOnClickListener {
             val newTask = Task.Task("New Task", "This is a new task", false)
@@ -44,34 +43,33 @@ class MainActivity : AppCompatActivity() {
     // Lifecycle Method - onStart
     override fun onStart() {
         super.onStart()
-        Log.d("MainActivity", "onStart called")  // Log when onStart is called
+        Log.d("com.example.task_manager.com.example.task_manager.MainActivity", "onStart called")  // Log when onStart is called
     }
 
-    // Lifecycle Method - onResume
+
     override fun onResume() {
         super.onResume()
-        Log.d("MainActivity", "onResume called")  // Log when onResume is called
+        Log.d("com.example.task_manager.com.example.task_manager.MainActivity", "onResume called")  // Log when onResume is called
     }
 
-    // Lifecycle Method - onPause
+
     override fun onPause() {
         super.onPause()
-        Log.d("MainActivity", "onPause called")  // Log when onPause is called
+        Log.d("com.example.task_manager.com.example.task_manager.MainActivity", "onPause called")  // Log when onPause is called
     }
-
     // Lifecycle Method - onStop
     override fun onStop() {
         super.onStop()
-        Log.d("MainActivity", "onStop called")  // Log when onStop is called
+        Log.d("com.example.task_manager.com.example.task_manager.MainActivity", "onStop called")  // Log when onStop is called
     }
 
-    // Show a Toast message
+
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
-    // Send a Notification (this function needs implementation)
-    private fun sendNotification(message: String) {
+
+    private fun sendNotification(message: String) {// Show a Toast message
         // Your notification code goes here (from previous steps)
     }
 }

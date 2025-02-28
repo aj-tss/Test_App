@@ -1,10 +1,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".MainActivity">
 
-    <!-- Button to add a task -->
+    <!-- Button to com.example.task_manager.com.example.task_manager.add a task -->
 
     <!-- Button to mark a task as completed -->
     <Button
