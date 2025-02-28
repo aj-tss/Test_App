@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Task_Manager</string>
+    <string name="complete_task">Complete Task</string>
+    <string name="add_task">Add Task</string>
 </resources>
