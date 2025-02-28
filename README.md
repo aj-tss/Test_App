@@ -66,16 +66,11 @@ A series of methods called during different instances of an app's lifecycle
 		Unique identifier for every single commit in a Git repository.
 		Generated using SHA-1; 40-char string of hexadecimal
 		therefore, *git log
+  
 - Relative refs:
 		    Moving upwards one commit at a time with ^
 		    Moving upwards a number of times with ~<num>
 		    
-		    eg:
-		    git checkout C3 -> move to commit C3
-		    git checkout HEAD^ -> check the parent
-		    git checkout HEAD^ -> Checl C3's grandparent
-		    "~" operator - to move a lot of levels up in the commit tree by taking a trailing number
-		    eg: git checkout HEAD~4
 	
 - Branch Forcing:
 		-f can be used to directly reassign a branch to a commit
@@ -85,13 +80,13 @@ A series of methods called during different instances of an app's lifecycle
 		    
 
 - Reversing Changes in Git
-		- i) git reset:
+	- i) git reset:
 			Like "rewriting history"
 			Will move a branch backwards as if the commit had never been made in the first place
 			Doesn't work well for remote branches
 			eg: git reset HEAD~1
 			
-		- ii) git revert:
+	- ii) git revert:
 			Reverses changes and shares it with others
 			Works better for remote branches
 			eg: git revert HEAD
